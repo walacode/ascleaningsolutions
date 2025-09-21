@@ -2259,7 +2259,7 @@ header.header-sticky {
 
 .sub-menu {
   position: absolute;
-  top: 100%;
+  top: 80%;
   background-color: var(--white);
   box-shadow: 0px 12px 46px 0px rgba(0, 0, 0, 0.1019607843);
   min-width: 200px;
