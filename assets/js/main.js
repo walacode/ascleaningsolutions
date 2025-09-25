@@ -934,31 +934,6 @@
             const text = $item.find("> a.item-link").clone().children().remove().end().text().trim();
             const submenu = $item.find("> .sub-menu");
             const id = "dropdown-menu-" + i;
-            if (text.toLowerCase() === "home") {
-                const $li = $(`
-              <li class="nav-mb-item">
-                  <a href="#${id}" class="collapsed mb-menu-link" data-bs-toggle="collapse" aria-expanded="false" aria-controls="${id}">
-                      <span>${text}</span>
-                      <span class="icon icon-caret-down"></span>
-                  </a>
-                  <div id="${id}" class="collapse">
-                      <ul class="sub-nav-menu"></ul>
-                  </div>
-              </li>
-          `);
-                $(".modalDemo .demo-name").each(function () {
-                    const $demoName = $(this);
-                    const link = $demoName.attr("href") || "#";
-                    const title = $demoName.text().trim();
-                    const isActive = $demoName.hasClass("active");
-                    if (title) {
-                        const activeClass = isActive ? "active" : "";
-                        $li.find(".sub-nav-menu").append(`<li><a href="${link}" class="sub-nav-link ${activeClass}">${title}</a></li>`);
-                    }
-                });
-                $mobileMenu.append($li);
-                return;
-            }
 
             if (submenu.length > 0) {
                 const $li = $(`

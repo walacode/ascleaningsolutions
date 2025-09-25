@@ -297,6 +297,14 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+.tf-header .logo-site img {
+  max-width: 25%;
+}
+
+.d-xl-block {
+  height: fit-content;
+}
+
 .row {
   margin-right: -16px;
   margin-left: -16px;
@@ -1792,6 +1800,10 @@ a:hover {
   #goTop {
     right: 40px;
   }
+
+  .a-whatsapp {
+    right: 39px !important;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -2022,10 +2034,6 @@ header.header-sticky {
   display: flex;
 }
 
-.logo-site img {
-  aspect-ratio: 2.5094339623;
-}
-
 .tf-topbar {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -2227,8 +2235,8 @@ header.header-sticky {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   position: relative;
 }
 
@@ -2534,8 +2542,8 @@ header.header-sticky {
 }
 
 .tf-header.style-3 .item-link {
-  padding-top: 24px;
-  padding-bottom: 40px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .tf-header.style-3.header-fixed .item-link {
@@ -24323,4 +24331,40 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-top: 15px;
   font-size: larger;
   font-weight: 500;
+}
+
+
+/* Hide on screens 1024px and below (tablet + mobile) */
+@media (max-width: 880px) {
+  .tf-topbar .group-btn {
+    display: none !important;
+  }
+}
+
+
+.a-whatsapp {
+
+    width: 40px;
+    height: 40px;
+    right: 19px;
+    bottom: 35px;
+    position: fixed;
+    
+    cursor: pointer;
+  background: #25e211;
+  z-index: 996;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.a-whatsapp i {
+  color: white;
+}
+
+.img-fluid {
+  min-height: 99%;
 }
