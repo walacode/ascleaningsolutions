@@ -19367,7 +19367,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .s-page-title {
-  padding: 60px 0px;
+  padding: 15px 0px;
   background-color: var(--bg-9);
 }
 
@@ -19406,16 +19406,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 @media (min-width: 992px) {
-  .s-page-title {
+  /* .s-page-title {
     padding: 80px 0px;
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
-  .s-page-title {
+  /* .s-page-title {
     padding-top: 111px;
     padding-bottom: 110px;
-  }
+  } */
 
   .s-page-title .title-page {
     line-height: 67px;
@@ -24342,6 +24342,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 
+@media (max-width: 1100px) {
+  .CEO-intro-2{
+    display: none !important;
+  }
+}
+
+
 .a-whatsapp {
 
     width: 40px;
@@ -24367,4 +24374,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .img-fluid {
   min-height: 99%;
+}
+
+.footer-col-block{
+  padding-left:5vw;
 }
