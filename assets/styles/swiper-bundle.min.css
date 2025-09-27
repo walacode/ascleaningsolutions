@@ -38,7 +38,7 @@
     padding: 0;
     z-index: 1;
     display: block;
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 .swiper-vertical>.swiper-wrapper {
